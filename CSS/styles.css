@@ -1,0 +1,583 @@
+/* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0 auto;
+  width: 100%;
+}
+
+body {
+  font-family: sans-serif, Arial, Helvetica;
+  font-size: 0.75em;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Grid Container */
+
+.grid-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px 60px 1fr;
+  grid-template-areas:
+    "header"
+    "navigation"
+    "main-content";
+}
+
+/* Header Styling */
+
+.header {
+  padding: 5px;
+  grid-area: header;
+  color: white;
+  background-color: #7477bf;
+}
+
+
+.title{
+  font-size: 3em;
+  margin: 0;
+}
+
+.my{
+  color: #ffb101; 
+}
+
+
+.app-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0;
+}
+
+#headerBar {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  width: 50%;
+}
+
+.bell-icon {
+  position: relative;
+  top: 12px;
+  right: 30px;
+  padding-right: 10px;
+  border-right: 1px solid black;
+  width: 45px;
+  height: 30px;
+  fill: #ffb101;
+}
+
+.bell-alert{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: 5px;
+  background-color: green;
+  border-radius: 100%;
+}
+
+
+.main-image{
+  position: relative;
+  bottom: 3px;
+  border-radius: 50%;
+  padding-right: 3px;
+  height: 88%;
+  }
+
+.profile-image {
+  border-radius: 50%;
+  width: 50px;
+  margin: auto 10px;
+}
+
+.banner-name{
+  font-size: 1.5em; 
+}
+
+.navigation{
+  background-color: #4d4c72;
+}
+
+.navigation ul{
+  list-style: none;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  padding: 0 0;
+  margin: 5px 0;
+}
+
+.main-header{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 45% 55%;
+}
+
+.Dashboard{
+  font-size: 1.4em;
+  text-align: center;
+  color: #b5b0ae;
+}
+
+.headline-search{
+  background-color: #c9c6c5;
+}
+
+input, .headline-search{
+  width: 95%;
+  height: 28px;
+  border-radius: 5px;
+}
+
+.alert{
+  width: 97%;
+  background-color: #7477bf;
+  margin: 0 auto;
+  border-radius: 20px;
+  text-align: center;
+  align-content: center;
+  color: white;
+  font-size: 1.25em;
+  height: 60px;
+}
+
+.traffic{
+  width: 99%;
+  margin: 0 auto;
+}
+
+.traffic canvas{
+  height: 350px;
+}
+
+.traffic-header{
+  color: #ffb101;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.traffic-header h3{
+   font-size: 1.8em; 
+}
+
+.traffic-nav{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  color: #7477bf ;
+}
+
+.daily{
+  text-align: center;
+  font-size: 3em;
+  color: #ffb101;
+  border-bottom: 4px solid #7477bf;
+  border-top: 4px solid #7477bf;
+}
+
+.mobile{
+  text-align: center;
+  font-size: 3em;
+  color: #ffb101;
+  padding-bottom: 26px;
+  border-bottom: 4px solid #7477bf;
+}
+
+.social-container{
+  display: flex;
+  background-color: #bfbfbf;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 95%;
+  height: 125px;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.social-header{
+  text-align: center;
+  font-size: 3em;
+  color: #ffb101;
+}
+
+.social-image svg{
+  height: 103px;
+  margin-top: 15px;
+}
+
+.social-text{
+  font-size: 2em;
+  color: white;
+  text-align: center;
+}
+
+.social-numbers{
+  font-size: 1.8em;
+  color: #7477bf;
+  margin: auto;
+}
+
+.members{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.members h3{
+ font-size: 3em; 
+ color: #ffb101;
+}
+
+.profile-image{
+ width: 75px;
+ height: 75px; 
+}
+
+.members-container{
+  display: flex;
+  border-bottom: 2px solid #7477bf;
+  padding-bottom: 3%;
+  padding-top: 1%;
+}
+
+.members-text{
+  font-size: 1.7em;
+}
+
+.date {
+  font-size: 1.2em;
+  margin-left: auto;
+  text-align: center;
+  margin-right: 4px;
+  color: #c7c5c1;
+}
+
+.time{
+  margin: 0 0;
+  color: #bfbfbf;
+}
+
+.message h3{
+  font-size: 2.4em;
+  color: #ffb101;
+  text-align: center;
+}
+
+.message{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form-field{
+ margin: 2% auto; 
+ height: 40px;
+ background-color: #D5D5D5;
+ border: 2px solid #ffb101;
+}
+
+textarea{
+  height: 125px;  
+  border-radius: 10px;
+  background-color: #D5D5D5;
+ border: 2px solid #ffb101;
+}
+
+.widget-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.button-primary, .button-disabled{
+  background-color: #53bab3;
+  height: 35px;
+  border-radius: 5px;
+  box-shadow: 4px 5px 10px black;
+  font-size: 2em;
+  color: white;
+  width: 35%;
+  margin: 2% auto;
+}
+
+.settings{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.settings h3{
+  font-size: 2.4em;
+  color: #ffb101; 
+  text-align: center;
+}
+
+select{
+  width: 60%;
+  margin: 2% auto;
+  border-radius: 5px;
+}
+
+.settings-button, button{
+  width: 100%;
+  text-align: center; 
+}
+
+.button-disabled{
+  background-color: grey; 
+}
+
+@keyframes ding{
+0%{ 
+} 30%{
+transform: rotate(45deg);
+} 50%{
+transform:rotate(-25deg); 
+} 80%{
+transform: rotate(10deg);
+ }
+}
+
+svg:hover .bell-icon{
+  transform-origin: 50% 50%;
+  animation: ding .8s ease-out .3s forwards; 
+}
+
+.Toggle-text{
+ font-size: 2em;
+ color: #7477bf;
+}
+
+.toggles{
+ width: 100%;
+ margin: auto; 
+ padding-bottom: 10px;
+}
+
+.toggles span{
+  height: 30px;
+  font-size: 20px;
+   margin: auto;
+}
+
+.canvas-width{
+max-width: 100%;  
+}
+
+@media (min-width: 767px) {
+  .grid-container {
+    grid-template-columns: 65px 1fr;
+    grid-template-rows: 65px 1fr;
+    grid-template-areas:
+      "header header"
+  "navigation main-content";
+}
+
+.navigation ul{
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  margin-top: 50px;
+  margin-left: 5px;
+}
+
+.navigation img{
+  align-self: center;
+  margin-bottom: 150%; 
+}
+
+.main-header{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 25px;
+  font-size: 1.5em;
+}
+
+.headline-search, input {
+  width: 365px;
+  height: 28px;
+}
+
+.daily h3, .mobile h3{
+  display: inline;
+  align-content: center
+}
+
+.daily, .mobile{
+  display: inline-flex;
+  flex-direction: column;
+  width: 46%;
+  text-align: left;
+  font-size: 2em;
+  margin-left: 2.8%;
+  border: 4px solid #7477bf;
+  margin-top: 50px;
+}
+
+.daily h3, .mobile h3{
+  padding-left: 2%; 
+}
+
+.widget-container-half{
+  width: 100%;
+}
+
+.traffic-header h3, .traffic-nav{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-right: 50px;
+}
+
+.social-header{
+  text-align: left;
+  padding-left: 3%;
+  font-size: 3em;
+}
+
+.social-container{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30%;
+  margin-left: 2.5%;
+  height: 250px;
+  padding: 0 0;
+  border: 5px solid #ffb101;
+ }
+
+.message-settings{
+  padding-top: 50px;
+  width: 85%; 
+  margin: 0 auto;
+  border-top: 2px solid black;
+}
+
+.settings{
+  width: 85%;
+}
+
+.settings select{
+   width: 95%; 
+}
+
+.member-flex{
+  padding-bottom: 4%;  
+}
+
+.settings-button{ 
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+ }
+
+.toggles, span{
+  width: 75%;
+  text-align: center;
+  margin: 2% auto;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 1023px) {
+
+.member-flex{
+  padding: 50px ;
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.members-container{
+  height: 20%;
+  width: 100%;
+}
+
+.members-text, .profile-image{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: auto;
+  height: 105px;
+  font-size: 1.4em;
+}
+
+.members h3{
+  margin-left: 3%; 
+  font-size: 2em;
+}
+
+.members-container{
+   border-bottom: 2px solid #7477bf;
+   width: 95%;
+   margin: auto; 
+ }
+
+.message-settings{
+  padding-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  width: 98%; 
+  margin: 0 auto;
+  border-top: 2px solid black;
+}
+
+.message{
+  margin-right: 2%; 
+}
+
+.settings{
+  width: 98%;
+ border-left: .5px solid black;
+}
+
+.settings select{
+ width: 70%; 
+ font-size: 22px;
+}
+
+.member-flex{
+  padding-bottom: 4%;  
+}
+
+.settings-button{ 
+  justify-content: center;
+  margin: auto;
+  padding: 0;
+ }
+
+textarea{ 
+  width: 80%;
+  margin: auto; 
+}
+
+.form-area{
+margin-top: 4%;
+}
+
+.toggles{
+  display: inline-flex;
+  flex-direction: column;
+  width: 75%;
+  }
+
+.widget-container .button-primary{
+  margin-top: 7.5%;
+}
+  }}

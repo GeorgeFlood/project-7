@@ -1,0 +1,71 @@
+*{
+margin: 0 0;
+}
+
+/*Grid layout*/
+.container{
+height: 100vh;
+display: grid;
+grid-template-columns: 1fr 11fr;
+grid-template-rows: 100px;
+}
+
+/* HEADER GRID / POSITIONING */
+header{
+grid-column: 1 / 3;
+grid-row: 1 / 2;
+background-color: #7477bf;
+}
+
+.title{
+margin-right: auto;	
+}
+
+.header-container{
+display: flex;
+color: white;
+justify-content: space-around;	
+padding: 2% 2% 2% 2% ;
+}
+
+/* NAV GRID / POSITION */
+nav{
+background-color: #4d4c72;	
+grid-row: 2 / 4;
+grid-column: 1 / 2;
+}
+
+ul, li{
+list-style: none;
+padding: 50px 13px;	
+}
+
+/* START FOR THE MAIN CONTENT BOX */
+main{
+grid-row: 2 / 4;
+}
+
+
+/* ANIMATION FOR THE BELL SVG   THIS GOES LAST*/
+@keyframes ding {
+0%{	
+}
+30%{
+transform: rotate(45deg);	
+}80%{
+transform: rotate(-25deg);
+} 90%{
+ }	
+}
+
+svg:hover, .bell-icon{
+transform-origin: 50% 50%;
+animation: ding .8s ease-out 0.2s forwards;	
+}
+
+svg, .bell-icon {
+height: 45px; width: 45px;
+fill: #ffb101;
+}
+
+
