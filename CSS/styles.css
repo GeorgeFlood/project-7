@@ -79,7 +79,7 @@ a {
   width: 10px;
   height: 10px;
   right: 5px;
-  background-color: green;
+  background-color: #66ff00;
   border-radius: 100%;
 }
 
@@ -578,6 +578,6 @@ margin-top: 4%;
   }
 
 .widget-container .button-primary{
-  margin-top: 7.5%;
+  margin-top: 8.7%;
 }
   }}
